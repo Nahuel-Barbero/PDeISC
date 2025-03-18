@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diario en línea con noticias de actualidad">
+    <title>Diario Nahuel Barbero</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Diario Nahuel Barbero</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="headline-news">
+            <h2>Noticias Principales</h2>
+            <div class="news-container">
+
+                <!-- Noticia 1 -->
+                <article class="news-article">
+                    <h3>El mensaje de Messi</h3>
+                    <img src="imgen de messi.jpg" alt="Lionel Messi fuera de la convocatoria" class="news-image">
+                    <p>El mensaje de Messi tras quedar fuera de la convocatoria de los partidos de la Selección ante Uruguay y Brasil</p>
+                    <div class="more-content" style="display: none;">
+                        <p>Lionel Messi no estará presente en el duelo de Eliminatorias ante Uruguay y Brasil. El cuerpo técnico de la Selección argentina decidió desafectar al capitán dado que sufrió una pequeña lesión en el aductor izquierdo. Ante este situación dejó un mensaje en sus redes sociales.</p>
+                        <p>“Una lástima perderme estos dos partidos tan especiales con la Selección contra Uruguay y Brasil. Como siempre quería estar, pero en el último momento una lesión no muy importante que me obliga a parar por un tiempo antes de volver a jugar me dejó afuera. Desde acá voy a estar alentando y acompañando como un hincha más. ¡Vamos, Argentina!”, escribió.</p>
+                    </div>
+                    <a href="javascript:void(0);" onclick="toggleContent(event)">Leer más...</a>
+                </article>
+
+                <!-- Noticia 2 -->
+                <article class="news-article">
+                    <h3>El abogado de Wanda Nara reveló la verdad</h3>
+                    <img src="imgen wanda nara.jpg" alt="Wanda Nara" class="news-image">
+                    <p>El abogado de Wanda Nara reveló la verdad sobre la cirugía que tuvo la mediática en pleno conflicto con Icardi</p>
+                    <div class="more-content" style="display: none;">
+                        <p>Nicolás Payarola habló de la operación a la que se sometió Wanda Nara en medio del conflicto con Mauro Icardi. En su diálogo con TN Show, el abogado también contó cómo transita este momento su representada.</p>
+                        <p>“Fue por un tema de salud, decidido a último momento, era necesaria la intervención”, detalló el letrado luego de las diferentes versiones que circularon sobre la cirugía que tuvo que hacerse la mediática.</p>
+                        <p>Al ser consultado sobre si la necesidad de entrar a quirófano tenía que ver con el diagnóstico de leucemia de Wanda, Payarola indicó: “En parte sí. Sobre todo por la urgencia de la operación”.</p>
+                    </div>
+                    <a href="javascript:void(0);" onclick="toggleContent(event)">Leer más...</a>
+                </article>
+
+                <!-- Noticia 3 -->
+                <article class="news-article">
+                    <h3>Detuvieron a un menor de 16 años</h3>
+                    <img src="imagen nene 16 anios.jpg" alt="Imagen noticia 3" class="news-image">
+                    <p>Detuvieron a un menor de 16 años por el caso del joven que quiso evitar un robo en San Justo y fue asesinado</p>
+                    <div class="more-content" style="display: none;">
+                        <p>Un adolescente de 16 años fue detenido este lunes en la localidad bonaerense de San Justo, acusado de ser el autor material del crimen de Gabriel Quinteros, el joven que quiso evitar el robo de una moto y fue asesinado de un tiro en la cabeza.</p>
+                        <p>El sospechoso fue identificado bajo el apodo de "Pepo" y quedó detenido en las últimas horas, luego de que la Justicia ordenara una serie de allanamientos en distintos puntos de la localidad bonaerense de San Justo.</p>
+                    </div>
+                    <a href="javascript:void(0);" onclick="toggleContent(event)">Leer más...</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Diario Nahuel Barbero. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; E.E.S.T.N5</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.headline-news h2,
+.other-news h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.news-article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.news-article h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.news-article p {
+    margin-bottom: 10px;
+}
+
+.news-article a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-container .news-article:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+ /* para el tema de responsive */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .news-container {
+        justify-content: space-around;
+    }
+
+    .news-article {
+        width: 45%;
+    }
+
+    .headline-news h2 {
+        font-size: 1.5em;
+    }
+
+    .news-article h3 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-article {
+        width: 80%;
+    }
+
+    .headline-news h2 {
+        font-size: 1.3em;
+    }
+
+    .news-article h3 {
+        font-size: 1.1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    footer .social-media {
+        font-size: 0.9em;
+    }
+
+    footer .social-media a {
+        margin-right: 10px;
+    }
+}
